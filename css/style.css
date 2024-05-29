@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variable para el font-family*/
+:root{
+    --font-family: 'Reddit Mono', monospace;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-family);
+}
+
+/*Variables de colores*/
+:root{
+    --main-color: 	#ee4035;
+    --secondary-color: #f37736;
+    --third-color: 	#fdf498;
+    --black-color: #000000;
+}
+
+/*Body scroll*/
+body{
+    overflow-x: hidden;
+}
+
+/*Header*/
+.header{
+    background-color: var(--main-color);
+    width: 100vw;
+    height: 20vh;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Main*/
+.main{
+    background-color: var(--third-color);
+    width: 100vw;
+    height: 30vh;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main img{
+    width: 50rem;
+    height: 27rem;
+    border-radius: 50%;
+
+}
+
+/*hobbies*/
+.hobbies{
+    background-color: var(--third-color);
+    width: 100vw;
+    height: 75rem;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hobbiesItems{
+    width: 90%;
+    min-height: 85%;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hobbyItem{
+    width: 45rem;
+    border-color: var(--black-color);
+    border-style: solid;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+.hobbyItem img{
+    width: 30rem;
+    height: 25rem;
+    border-radius: 2rem;
+}
+.hobbyItem p{
+    font-size: 2rem;
+    width: 90%;
+    height: 40%;
+    overflow: auto;
+}
+
+/*favorites*/
+.favorites{
+    background-color: var(--third-color);
+    width: 100vw;
+    height: 75rem;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    height: 80%;
+    width: 95%;
+    display: flex;
+
+}
+.contentItem{
+    height: 100%;
+    width: 45rem;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.contentItem:hover{
+    transform: scale(1.1); 
+}
+.contentItem img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Contact*/
+.contact{
+    background-color: var(--third-color);
+    width: 100vw;
+    height: 30rem;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact ul {
+    list-style-type: none;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.contact il{
+    height: 50%;
+}
+.icon{
+    width: 5rem;
+    height: 5rem;
+
+}
+
+footer{
+    width: 100vw;
+    height: 10rem;
+    background-color: var(--secondary-color);
+    font-size: 2.5rem;
+    text-align: center;
+}
